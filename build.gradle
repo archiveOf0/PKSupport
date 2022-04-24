@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+group 'org.kingOf0'
+version '1.1.4'
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+
+    compileOnly 'me.clip:placeholderapi:+'
+    compileOnly 'com.github.SkriptLang:Skript:+'
+    compileOnly 'com.github.ProjectKorra:ProjectKorra:+'
+}
+
+shadowJar {
+
+    archiveName("PK-Support-" + version + ".jar")
+}

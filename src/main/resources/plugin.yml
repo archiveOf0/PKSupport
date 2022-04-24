@@ -1,0 +1,7 @@
+main: me.kingOf0.pksupport.Main
+version: 1.1.4
+author: SimitSu
+name: PK-Support
+softdepend:
+  - PlaceholderAPI
+  - Skript

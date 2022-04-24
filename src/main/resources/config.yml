@@ -1,0 +1,8 @@
+notValidBendingPlayer: '&cNot Valid Player'
+notValidSlot: '&cInvalid Slot'
+notSet: '&7slot &e%slot%&7 is empty'
+cooldownPrefix: '&m'
+notValidParams: '&cNot Valid Params &e%params%'
+haventElement: '&cNot choosen any element'
+lengthLimit: 10
+debug: false
